@@ -1,0 +1,94 @@
+@font-face {
+	font-family: "Anton";
+	src: url("../../../fonts/Anton-Regular.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Inter";
+	src: url("../../../fonts/Inter.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+.ourContentWrapper {
+	background-color: #0e0f0f;
+	height: 100vh;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.headerWrapper {
+	position: relative;
+
+	width: 80%;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: 200px;
+	text-align: center;
+	font-family: Anton;
+	font-size: 40px;
+}
+
+.cardsWrapper {
+	position: relative;
+	width: 80%;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+
+.cardContainer {
+	position: relative;
+	border: 1px solid white;
+	height: 300px;
+	width: 100%;
+
+	box-sizing: border-box;
+	font-family: Inter;
+}
+
+.cardContainer:hover .hoverLine {
+	width: 100%;
+	transition: 0.3s;
+}
+
+.cardContainer:hover .arrow {
+	transition: 0.3s;
+	background-color: #ff5252;
+}
+
+.cardContainer:hover {
+	cursor: pointer;
+}
+.cardContentWrapper {
+	position: relative;
+
+	height: 100%;
+	padding: 30px;
+	box-sizing: border-box;
+}
+
+.hoverLine {
+	position: absolute;
+	width: 0%;
+	height: 5px;
+	background-color: #ff5252;
+	z-index: 3;
+	transition: 0.3s;
+}
+
+.cardHeader {
+}
+
+.arrow {
+	position: absolute;
+	background-color: white;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	bottom: 30px;
+}
